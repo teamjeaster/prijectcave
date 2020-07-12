@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<title>Social Cave &middot; Sign up!</title>
+</head>
+<body>
+
+	<!-- START OF APP -->
+
+	<!-- WEBPAGE -->
+	<div>
+		<div>
+			<div class="absolute bg-purple-300 w-2/4 h-screen">
+				<div class="m-20">
+					<h1 class="text-3xl mb-12">
+						Welcome!
+					</h1>
+					<p class="text-2xl text-gray-700 mb-6">
+						Welcome to socialcave!
+					</p>
+					<p class="text-2xl text-gray-700 mb-48">
+						Sign up to continue to the site. If you are having <br>
+						trouble signing up to social cave contact us by <br>
+						<a class="text-blue-700" href="mailto:rjmasongorrie@hotmail.com">clicking here!</a> 
+					</p>
+					<p class="text-xs">
+						&copy; Socialcave 2020. All rights reserved <br> <br>
+						<a href="" class="mr-2">contact us</a> <a href="" class="mr-2">about us</a> <a href="" class="mr-2">terms & service</a>
+					</p>
+				</div>
+			</div>
+			<div class="absolute inset-y-0 right-0 w-8 bg-gray-100 w-2/4">
+				<div>
+					<div>
+						<h4 class="text-4xl m-24 mb-20">Sign up!</h4>
+					</div>
+					<div class="m-24">
+						<form id="signup-form" class="mb-8">
+							<div class="input-text mb-8">
+								<label>Username:</label><br>
+								<input class="p-1 w-3/4" type="text" id="signup-usrname" name="signup-usrname">
+							</div>
+							<div class="input-text mb-8">
+								<label class="mb-4" for="signup-email">Email:</label><br>
+								<input class="p-1 w-3/4" id="signup-email" type="email" name="signup-input-signup">
+								
+							</div>
+							<div class="input-text mb-8">
+								<label for="signup-pass-signup">Password:</label><br>
+								<input class="p-1 w-3/4" id="signup-pass" type="password" name="signup-pass-signup">
+							</div>
+							<div class="button-input-signup">
+								<button class="p-1 signup-input-but bg-blue-300">Sign up!</button>
+							</div>
+						</form>
+						<div>
+							<p class="text-gray-700">
+								Already got an account? <a class="text-blue-700" href="index.html">Click here to sign in!</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- END OF APP -->
+
+	<!-- Firebase SDK -->
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+	     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+
+	<script>
+	  // Your web app's Firebase configuration
+	  var firebaseConfig = {
+	    apiKey: "AIzaSyDapmlW_835yrsvzOvP-msgvDy_78qbKt8",
+	    authDomain: "chat-app-test-12af4.firebaseapp.com",
+	    databaseURL: "https://chat-app-test-12af4.firebaseio.com",
+	    projectId: "chat-app-test-12af4",
+	    storageBucket: "chat-app-test-12af4.appspot.com",
+	    messagingSenderId: "151676485048",
+	    appId: "1:151676485048:web:ab4a2a86103373ae18a34d",
+	    measurementId: "G-6MDTLW2RTF"
+	  };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+	  firebase.analytics();
+	  // make auth and firestone vars
+	  const auth = firebase.auth();
+	  const db = firebase.firestore();
+
+	</script>
+
+	<script type="text/javascript" src="scripts/auth.js"></script>
+	<script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>

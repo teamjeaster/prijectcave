@@ -1,0 +1,27 @@
+input[type=text] {
+  opacity: 0.3;
+  border: none;
+  border-bottom: 2px solid lightgray;
+}
+input[type=email] {
+  opacity: 0.3;
+  border: none;
+  border-bottom: 2px solid lightgray;
+}
+input[type=Password] {
+  opacity: 0.3;
+  border: none;
+  border-bottom: 2px solid lightgray;
+}
+input[type=email]:focus {
+  opacity: 0.9;
+  border-bottom: 3px solid #555;
+}
+input[type=password]:focus {
+  opacity: 0.9;
+  border-bottom: 3px solid #555;
+}
+input[type=text]:focus {
+  opacity: 0.9;
+  border-bottom: 3px solid #555;
+}
